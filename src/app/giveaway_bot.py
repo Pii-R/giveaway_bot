@@ -7,7 +7,8 @@ class giveAwayBot():
    def analyze_home_timeline(self):
       tweet_list = self.t.get_tweets_from_home_timeline()
       for tweet in tweet_list:
-         print(detect_giveaway(tweet)) 
+         if detect_giveaway(tweet):
+            print(detect_giveaway(tweet),tweet) 
       
 if __name__ == "__main__":
    bot = giveAwayBot()

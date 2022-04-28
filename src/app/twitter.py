@@ -1,4 +1,3 @@
-from itertools import count
 import tweepy
 import os
 
