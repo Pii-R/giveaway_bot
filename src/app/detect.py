@@ -6,10 +6,8 @@ from nltk.tokenize import word_tokenize
 
 def detect_giveaway(tweet:str)->bool:
     """use this fonction to determine if a tweet is about a giveaway or not
-
     Args:
         tweet (str): tweet text to analyze
-
     Returns:
         bool: True if tweet talks about giveaway False if not
     """    
@@ -17,7 +15,6 @@ def detect_giveaway(tweet:str)->bool:
     format_tweet = remove_emoji(tweet.lower())
     tokenized_format_tweet = word_tokenize(format_tweet)
     l=[char in giveaway_words_list for char in tokenized_format_tweet]
-    # print(tokenized_format_tweet)
     if True in l :
         return True
     return False
