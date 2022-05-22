@@ -1,7 +1,7 @@
 # coding: utf-8
 "fonctions used for analyzing tweet and return what kind of message there is inside"
-from twitter import twitter
-from utils import remove_emoji
+from .twitter import twitter
+from .utils import remove_emoji
 from nltk.tokenize import word_tokenize
 
 def detect_giveaway(tweet:str)->bool:

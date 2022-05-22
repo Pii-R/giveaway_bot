@@ -21,6 +21,16 @@ class twitter():
     def get_tweet_by_id(self, id:int):
         return self.api.get_status(id=id, tweet_mode="extended").full_text
     
+    def follow_account(self,account_id: int):
+        self.api.create_friendship(user_id = account_id)
+
+    def retweet(tweet_id:id):
+        pass
+
+    def like_tweet(tweet_id:int):
+        pass
+    
 if __name__ == "__main__":
     t = twitter()
-    print(t.get_tweet_by_id(1512445562167169029))
+    t.follow_account(2216500400)
+    # print(t.get_tweet_by_id(1512445562167169029))

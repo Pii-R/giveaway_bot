@@ -20,16 +20,19 @@ def format_sources_for_query(sources_account:set):
             formated_sources = "("+",".join([s]+l)+")"
         return formated_sources
     
-def run_scraping(params:dict):
+def run_scraping(scraping_params:dict):
     """_summary_
 
     Args:
         params (dict): {max_result:int,search:int,class:str}
     """    
+    search = scraping_params["search"]
+    search_class = scraping_params["class_search"]
+    max_results = scraping_params["max_results"]
     filename = RESULTS_DIR / "scrap_results.jsonl"
     sources = export_sources_accounts(SOURCE_DIR / "sources.json")
     formated_sources = format_sources_for_query(sources)
-    command = f"snscrape --jsonl --max-results 50 twitter-search '{formated_sources} #concours exclude:replies' > {filename}"
+    command = f"snscrape --jsonl --max-results {max_results} {search_class} '{formated_sources} {search} exclude:replies' > {filename}"
     os.system(command)
 
 if __name__ == "__main__":

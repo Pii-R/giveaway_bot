@@ -2,16 +2,20 @@
 from pathlib import Path
 from datetime import datetime
 import json
-from detect import detect_giveaway
+from .detect import detect_giveaway
 
-RESULTS_DIR = Path(__file__).parent.absolute() / "outputs"
+RESULTS_DIR = Path(__file__).parent.parent.absolute() / "outputs"
 def read_last_results(result_file:str):
     result_file_path= RESULTS_DIR / result_file
     with open(result_file_path,"r",encoding="utf-8") as r_file:
         for record in r_file:
             print(record)
             
-def add_new_tweet(record:dict): 
+def take_part(tweet_record:dict):
+    account_name = tweet_record["account"],
+    follow_account(account_name)
+    pass
+def update_tweet_lists(): 
     list_current_id = []
     with open(RESULTS_DIR / "tweets_historic.json", "r+") as hist_file:
         with open(RESULTS_DIR / "scrap_results.jsonl", "r") as r_file:
@@ -32,8 +36,8 @@ def add_new_tweet(record:dict):
                     }
                     historic["tweets"].append(data)
     with open(RESULTS_DIR / "tweets_historic.json","w") as new_hist_file:
-        json.dump(historic,new_hist_file)
+        json.dump(historic, new_hist_file)
                 
 if __name__ == "__main__":
     # read_last_results("scrap_results.jsonl")
-    add_new_tweet({})
+    pass

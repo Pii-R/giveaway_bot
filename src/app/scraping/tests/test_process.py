@@ -1,4 +1,4 @@
-from ..scraping.scrap import format_sources_for_query
+from ..scrap import format_sources_for_query
 
 def test_format_sources_query_one_sources():
     l = ["account1"]
