@@ -19,18 +19,38 @@ class twitter():
 
 
     def get_tweet_by_id(self, id:int):
+        """Gets a tweet by id
+
+        Args:
+            id (int): id of the tweet
+
+        Returns:
+            str: tweet
+        """        
         return self.api.get_status(id=id, tweet_mode="extended").full_text
     
     def follow_account(self,account_id: int):
+        """Follows an account with the given id
+        Args:
+            account_id (int): id of the account
+        """        
         self.api.create_friendship(user_id = account_id)
 
-    def retweet(tweet_id:id):
-        pass
+    def retweet(self,tweet_id:int):
+        """Retweets a tweet with the given id
 
-    def like_tweet(tweet_id:int):
+        Args:
+            tweet_id (int): id of the tweet
+        """        
+        self.api.retweet(tweet_id)
+
+    def like_tweet(self,tweet_id:int):
+        self.api.create_favorite(tweet_id)
         pass
     
 if __name__ == "__main__":
     t = twitter()
-    t.follow_account(2216500400)
+    t.follow_account(898994539)
+    t.like_tweet(1529401913602625536)
+    t.retweet(1529401913602625536)
     # print(t.get_tweet_by_id(1512445562167169029))
