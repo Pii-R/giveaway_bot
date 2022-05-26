@@ -1,0 +1,4 @@
+-db to store all possible giveaway tweets
+-retrieve all tweets from scraping with id, post_time, scraping_time,is_processed,possible_account_to_follow etc. and store them in the db in append mode. so check if no duplicate
+- for unprocessed tweets, like, rt and follow all accounts mentionned in the tweets
+-update their status

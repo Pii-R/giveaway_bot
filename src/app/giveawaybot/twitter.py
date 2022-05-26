@@ -1,4 +1,5 @@
 import tweepy
+from tweepy.errors import Forbidden
 import os
 
 API_KEY = os.environ.get("API_KEY")
@@ -34,23 +35,40 @@ class twitter():
         Args:
             account_id (int): id of the account
         """        
-        self.api.create_friendship(user_id = account_id)
-
+        try:
+            self.api.create_friendship(user_id = account_id)
+            return {"success": True}
+        except Forbidden as e:
+            print(e,account_id)
+            return {"success": False}
+            
     def retweet(self,tweet_id:int):
         """Retweets a tweet with the given id
 
         Args:
             tweet_id (int): id of the tweet
         """        
-        self.api.retweet(tweet_id)
+        try:
+            self.api.retweet(tweet_id)  
+            return {"success": True}
+        except Forbidden as e:
+            if "already retweeted" in str(e):
+                return {"success": True}
+            return {"success": False}
 
     def like_tweet(self,tweet_id:int):
-        self.api.create_favorite(tweet_id)
-        pass
+        try:
+            self.api.create_favorite(tweet_id)
+            return {"success": True}
+        except Forbidden as e:
+            if "already favorited" in str(e):
+                return {"success": True}
+            return {"success": False}            
+
     
 if __name__ == "__main__":
     t = twitter()
-    t.follow_account(898994539)
+    t.follow_account("Sheo")
     t.like_tweet(1529401913602625536)
     t.retweet(1529401913602625536)
     # print(t.get_tweet_by_id(1512445562167169029))

@@ -6,12 +6,28 @@ RESULTS_DIR = Path(__file__).parent.parent.absolute() / "outputs"
 SOURCE_DIR = Path(__file__).parent.parent.absolute() / "sources"
 
 def export_sources_accounts(file:str):
+    """export accounts to scrap from sources.json
+
+    Args:
+        file (str): file path where sources.json is located
+
+    Returns:
+        _type_: list
+    """
     with open(file, "r",encoding = 'utf-8') as sources_file:
         sources = json.load(sources_file)
         list_sources_account = [s["account"] for s in sources["sources"]]
         return list_sources_account
     
-def format_sources_for_query(sources_account:set):
+def format_sources_for_query(sources_account:list):
+    """format the query to scrap with all the accounts from sources.json
+
+    Args:
+        sources_account (list): list of accounts to scrap
+
+    Returns:
+        str: str formatted for query 
+    """    
     if sources_account:
         s = f"from:{sources_account[0]}"
         formated_sources  = s
@@ -21,7 +37,8 @@ def format_sources_for_query(sources_account:set):
         return formated_sources
     
 def run_scraping(scraping_params:dict):
-    """_summary_
+    """run the scraping of all the accounts from sources.json 
+    Then it will save the results in outputs/scrap_results.json   
 
     Args:
         params (dict): {max_result:int,search:int,class:str}

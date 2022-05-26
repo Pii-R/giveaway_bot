@@ -1,0 +1,95 @@
+{
+    "_type": "snscrape.modules.twitter.Tweet",
+    "url": "https://twitter.com/TopAchat/status/1529401913602625536",
+    "date": "2022-05-25T10:00:05+00:00",
+    "content": "#Concours \ud83c\udf81 #23AnsTopAchat\n\ud83d\udd25 + de 60 000 \u20ac \u00e0 gagner ! \ud83d\udd25\n\nOn continue avec le #Lot13 d'une valeur de 3998 \u20ac !\n\nPour participer\n\u2611 #RT ce tweet\n\u2611 Follow  @TopAchat\n\nParticipe aussi sur TikTok / Insta / Facebook / le site\n\u27a1 https://t.co/NaCsTlXFnS\n\ud83c\udf40 TAS le 27/05 \u00e0 12h https://t.co/8tlFVIYSpR",
+    "renderedContent": "#Concours \ud83c\udf81 #23AnsTopAchat\n\ud83d\udd25 + de 60 000 \u20ac \u00e0 gagner ! \ud83d\udd25\n\nOn continue avec le #Lot13 d'une valeur de 3998 \u20ac !\n\nPour participer\n\u2611 #RT ce tweet\n\u2611 Follow  @TopAchat\n\nParticipe aussi sur TikTok / Insta / Facebook / le site\n\u27a1 topachat.com/pages/concours\u2026\n\ud83c\udf40 TAS le 27/05 \u00e0 12h https://t.co/8tlFVIYSpR",
+    "id": 1529401913602625536,
+    "user": {
+        "_type": "snscrape.modules.twitter.User",
+        "username": "TopAchat",
+        "id": 106355755,
+        "displayname": "TopAchat",
+        "description": "\u00c9picier du #Geek depuis 1999 ! Grosse commande \u00e0 passer ? #codepromo \u00e0 la demande. Sinon, conseils techniques de 9h \u00e0 22h, du lundi au vendredi ! :)",
+        "rawDescription": "\u00c9picier du #Geek depuis 1999 ! Grosse commande \u00e0 passer ? #codepromo \u00e0 la demande. Sinon, conseils techniques de 9h \u00e0 22h, du lundi au vendredi ! :)",
+        "descriptionUrls": null,
+        "verified": true,
+        "created": "2010-01-19T08:42:47+00:00",
+        "followersCount": 775669,
+        "friendsCount": 10494,
+        "statusesCount": 996647,
+        "favouritesCount": 25034,
+        "listedCount": 787,
+        "mediaCount": 57329,
+        "location": "France",
+        "protected": false,
+        "linkUrl": "http://www.topachat.com",
+        "linkTcourl": "https://t.co/i8bL6Cf1nd",
+        "profileImageUrl": "https://pbs.twimg.com/profile_images/666893364965548032/JgXAxPOC_normal.png",
+        "profileBannerUrl": "https://pbs.twimg.com/profile_banners/106355755/1579601271",
+        "label": null,
+        "url": "https://twitter.com/TopAchat"
+    },
+    "replyCount": 783,
+    "retweetCount": 29448,
+    "likeCount": 8596,
+    "quoteCount": 65,
+    "conversationId": 1529401913602625536,
+    "lang": "fr",
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "sourceUrl": "https://mobile.twitter.com",
+    "sourceLabel": "Twitter Web App",
+    "outlinks": [
+        "https://www.topachat.com/pages/concours.php"
+    ],
+    "tcooutlinks": [
+        "https://t.co/NaCsTlXFnS"
+    ],
+    "media": [
+        {
+            "_type": "snscrape.modules.twitter.Photo",
+            "previewUrl": "https://pbs.twimg.com/media/FTl6nlcWQAEOIWt?format=jpg&name=small",
+            "fullUrl": "https://pbs.twimg.com/media/FTl6nlcWQAEOIWt?format=jpg&name=large"
+        }
+    ],
+    "retweetedTweet": null,
+    "quotedTweet": null,
+    "inReplyToTweetId": null,
+    "inReplyToUser": null,
+    "mentionedUsers": [
+        {
+            "_type": "snscrape.modules.twitter.User",
+            "username": "TopAchat",
+            "id": 106355755,
+            "displayname": "TopAchat",
+            "description": null,
+            "rawDescription": null,
+            "descriptionUrls": null,
+            "verified": null,
+            "created": null,
+            "followersCount": null,
+            "friendsCount": null,
+            "statusesCount": null,
+            "favouritesCount": null,
+            "listedCount": null,
+            "mediaCount": null,
+            "location": null,
+            "protected": null,
+            "linkUrl": null,
+            "linkTcourl": null,
+            "profileImageUrl": null,
+            "profileBannerUrl": null,
+            "label": null,
+            "url": "https://twitter.com/TopAchat"
+        }
+    ],
+    "coordinates": null,
+    "place": null,
+    "hashtags": [
+        "Concours",
+        "23AnsTopAchat",
+        "Lot13",
+        "RT"
+    ],
+    "cashtags": null
+}

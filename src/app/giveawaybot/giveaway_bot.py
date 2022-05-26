@@ -23,7 +23,7 @@ class giveAwayBot():
       }
       run_scraping(scraping_params)
       ## process them to know if they are new
-      update_tweet_lists()
+      update_tweet_lists("test_tweet.jsonl","test_historic_results.json")
       ## if so apply rt, like and follow to take part in giveaway
       pass
       

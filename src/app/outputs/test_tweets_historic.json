@@ -1,0 +1,17 @@
+{
+    "tweets": [
+        {
+            "accound_id": 1225440114832281600,
+            "tweet_id": 1525764170418999296,
+            "url": "https://twitter.com/CdiscountGaming/status/1525764170418999296",
+            "post_time": "2022-05-15T09:05:00+00:00",
+            "process_time": "2022-05-26 23:14:41",
+            "mentionned_accounts_id": [
+                167878747,
+                1225440114832281600
+            ],
+            "is_giveaway": true,
+            "status": "not completed"
+        }
+    ]
+}
