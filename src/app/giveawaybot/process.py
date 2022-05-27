@@ -1,16 +1,16 @@
 #coding: utf-8
 from pathlib import Path
 from datetime import datetime
-import json
-
+import json, os
 from .detect import detect_giveaway
 from .twitter import twitter as tw
 
 RESULTS_DIR = Path(__file__).parent.parent.absolute() / "outputs"
 
 def create_historic_file(historic_file:str):
-    with open(RESULTS_DIR / historic_file, "w") as hist_file:
-        json.dump({"tweets":[]}, hist_file)
+    if not os.path.isfile(RESULTS_DIR / historic_file):
+        with open(RESULTS_DIR / historic_file, "w") as hist_file:
+            json.dump({"tweets":[]}, hist_file)
     return historic_file
         
 def read_last_results(result_file:str):
@@ -18,6 +18,7 @@ def read_last_results(result_file:str):
     with open(result_file_path,"r",encoding="utf-8") as r_file:
         for record in r_file:
             print(record)
+            
 def is_participation_complete(status:dict):
     """return True if participation is complete else False
 
@@ -29,17 +30,14 @@ def is_participation_complete(status:dict):
     """    
     for followed_account in status["follow"]:
         for key_followed_account, value_followed_account in followed_account.items():
-            print(key_followed_account, value_followed_account)
             if not value_followed_account["success"]:
                 return False
     for liked_tweet in status["like"]:
         for key_liked_tweet, value_liked_tweet in liked_tweet.items():
-            print(key_liked_tweet, value_liked_tweet)
             if not value_liked_tweet["success"]:
                 return False
     for retweeted_tweet in status["rt"]:
         for key_retweeted_tweet, value_retweeted_tweet in retweeted_tweet.items():
-            print(key_retweeted_tweet, value_retweeted_tweet)
             if not value_retweeted_tweet["success"]:
                 return False
     return True
@@ -91,7 +89,13 @@ def update_tweet_lists(scrap_result_file:str, historic_file:str):
     with open(RESULTS_DIR / historic_file, "r+") as hist_file:
         with open(RESULTS_DIR / scrap_result_file, "r") as r_file:
             historic = json.load(hist_file)
-            [list_current_id.append(histo_record["id"]) for histo_record in historic["tweets"]]                
+            for historic_record in historic["tweets"]:
+                list_current_id.append(historic_record["tweet_id"])
+                if not historic_record["overall_status"]:
+                    print(f"{historic_record['tweet_id']} is not completed")
+                    status = take_part_in_giveaway_from_record(historic_record)  
+                    historic_record["status"] = status
+                    historic_record["overall_status"] = is_participation_complete(status)
             for new_record in r_file:
                 new_record = json.loads(new_record)
                 is_giveaway = detect_giveaway(new_record["content"])
