@@ -3,7 +3,6 @@ from .detect import detect_giveaway
 from app.scraping.scrap import run_scraping
 from .process import update_tweet_lists
 from pathlib import Path
-import os
 
 
 RESULTS_DIR = Path(__file__).parent.parent.absolute() / "outputs"

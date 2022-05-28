@@ -46,6 +46,7 @@ def run_scraping(scraping_params: dict):
     Args:
         params (dict): {max_result:int,search:int,class:str}
     """
+
     search = scraping_params["search"]
     search_class = scraping_params["class_search"]
     max_results = scraping_params["max_results"]
@@ -53,6 +54,7 @@ def run_scraping(scraping_params: dict):
     sources = export_sources_accounts(SOURCE_DIR / "sources.json")
     formated_sources = format_sources_for_query(sources)
     command = f"snscrape --jsonl --max-results {max_results} {search_class} '{formated_sources} {search} exclude:replies' > {filename}"
+    print(f"run scraping...\n{max_results} tweets are scraped")
     os.system(command)
 
 
