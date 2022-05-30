@@ -1,6 +1,5 @@
-import os
+import os, json, datetime
 from pathlib import Path
-import json
 
 RESULTS_DIR = Path(__file__).parent.parent.absolute() / "outputs"
 SOURCE_DIR = Path(__file__).parent.parent.absolute() / "sources"
@@ -46,17 +45,24 @@ def run_scraping(scraping_params: dict):
     Args:
         params (dict): {max_result:int,search:int,class:str}
     """
-
+    # date = datetime.datetime.now().strftime("%Y-%m-%d")
+    date = "2022-05-10"
     search = scraping_params["search"]
     search_class = scraping_params["class_search"]
     max_results = scraping_params["max_results"]
     filename = RESULTS_DIR / "scrap_results.jsonl"
     sources = export_sources_accounts(SOURCE_DIR / "sources.json")
     formated_sources = format_sources_for_query(sources)
-    command = f"snscrape --jsonl --max-results {max_results} {search_class} '{formated_sources} {search} exclude:replies' > {filename}"
+    command = f"snscrape --jsonl --max-results {max_results} {search_class} '{formated_sources} {search} since:{date} exclude:replies' > {filename}"
     print(f"run scraping...\n{max_results} tweets are scraped")
     os.system(command)
 
 
 if __name__ == "__main__":
-    run_scraping({})
+    scraping_params = {
+        "search": "#concours",
+        "class_search": "twitter-search",
+        "max_results": 30,
+        "start_time": "",
+    }
+    run_scraping(scraping_params)

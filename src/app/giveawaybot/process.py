@@ -6,6 +6,7 @@ from .detect import detect_giveaway
 from .twitter import twitter as tw
 
 RESULTS_DIR = Path(__file__).parent.parent.absolute() / "outputs"
+SOURCES_DIR = Path(__file__).parent.parent.absolute() / "sources"
 
 
 def create_historic_file(historic_file: str):
@@ -13,6 +14,21 @@ def create_historic_file(historic_file: str):
         with open(RESULTS_DIR / historic_file, "w") as hist_file:
             json.dump({"tweets": []}, hist_file)
     return historic_file
+
+
+def sort_by_post_time(record: dict):
+    """sort a dict of tweets by post time
+
+    Args:
+        record (dict): dict of tweets
+
+    Returns:
+        list: sorted dict of tweets
+
+    """
+    # todo test this function
+    {k: v for k, v in sorted(record.items(), key=lambda item: item["post_time"])}
+    return sorted(dict, key=lambda tweet: tweet["post_time"])
 
 
 def read_last_results(result_file: str):
@@ -80,8 +96,8 @@ def take_part_in_giveaway_from_record(tweet_record: dict):
     return status
 
 
-def return_list_mentioned_users(mentioned_users: list):
-    """return a list of mentioned users id from the list "mentionedUsers"
+def return_list_id_mentioned_users(mentioned_users: list):
+    """return a list of mentioned users id from the list "mentionedUsers" contained in a tweet record
 
     Args:
         mentioned_users (list): list containing all of mentioned users
@@ -89,10 +105,35 @@ def return_list_mentioned_users(mentioned_users: list):
     Returns:
         list: id list of mentioned users
     """
-    list_mentioned_users = []
-    if mentioned_users:
-        list_mentioned_users = [user["id"] for user in mentioned_users]
-    return list_mentioned_users
+    return [] if not mentioned_users else [user["id"] for user in mentioned_users]
+
+
+def add_new_users_to_sources(list_new_users: list):
+    """add new users to the sources filess
+
+    Args:
+        list_new_users (list): list of new users
+
+    Returns:
+        None: add new users to the sources files
+    """
+    with open(SOURCES_DIR / "sources.json", "r", encoding="utf-8") as sources_file:
+        t = tw()
+        sources_file_data = json.load(sources_file)
+        already_in_sources = [user["account"] for user in sources_file_data["sources"]]
+        for potential_user in list_new_users:
+            name_potential_user = t.get_user_name_from_id(potential_user)
+            if name_potential_user not in already_in_sources:
+                sources_file_data["sources"].append({"account": name_potential_user})
+    with open(RESULTS_DIR / "sources.json", "w", encoding="utf-8") as sources_file:
+        json.dump(sources_file_data, sources_file)
+
+
+#
+# for user in list_new_users:
+# if user not in sources:
+# sources.append(user)
+# return sources
 
 
 def update_tweet_lists(scrap_result_file: str, historic_file: str):
@@ -107,8 +148,8 @@ def update_tweet_lists(scrap_result_file: str, historic_file: str):
     list_current_id = []
     with open(RESULTS_DIR / historic_file, "r+") as hist_file:
         with open(RESULTS_DIR / scrap_result_file, "r") as r_file:
+            # do a function with hist_file as a parameter
             historic = json.load(hist_file)
-            print(len(historic["tweets"]))
             print("check if tweet is already in historic file")
             historic_record_to_update = 0
             for historic_record in historic["tweets"]:
@@ -123,20 +164,24 @@ def update_tweet_lists(scrap_result_file: str, historic_file: str):
                     historic_record_to_update += 1
             print(f"{historic_record_to_update} records have been updated")
             print("process new tweets")
+            # do a function with r_file as a parameter
             new_record_to_process = 0
-            for new_record in r_file:
-                new_record = json.loads(new_record)
+            all_new_mentionned_users = []
+            for new_line_record in r_file:
+                new_record = json.loads(new_line_record)
                 is_giveaway = detect_giveaway(new_record["content"])
                 if new_record["id"] not in list_current_id:
+                    list_mentioned_users = return_list_id_mentioned_users(
+                        new_record["mentionedUsers"]
+                    )
+                    [all_new_mentionned_users.append(u) for u in list_mentioned_users]
                     data = {
                         "accound_id": new_record["user"]["id"],
                         "tweet_id": new_record["id"],
                         "url": new_record["url"],
                         "post_time": new_record["date"],
                         "process_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                        "mentionned_accounts_id": return_list_mentioned_users(
-                            new_record["mentionedUsers"]
-                        ),
+                        "mentionned_accounts_id": list_mentioned_users,
                         "is_giveaway": is_giveaway,
                     }
                     status = take_part_in_giveaway_from_record(data)
@@ -144,6 +189,7 @@ def update_tweet_lists(scrap_result_file: str, historic_file: str):
                     data["overall_status"] = is_participation_complete(status)
                     historic["tweets"].append(data)
                     new_record_to_process += 1
+                add_new_users_to_sources(all_new_mentionned_users)
             print(f"{new_record_to_process} new records have been processed")
     print("write historic file")
     with open(RESULTS_DIR / historic_file, "w") as new_hist_file:

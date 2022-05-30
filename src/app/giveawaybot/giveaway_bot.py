@@ -27,7 +27,7 @@ class giveAwayBot:
         scraping_params = {
             "search": "#concours",
             "class_search": "twitter-search",
-            "max_results": 30,
+            "max_results": 40,
             "start_time": "",
         }
         if scraping_params["max_results"] > 0:

@@ -8,3 +8,5 @@
 - do a count down to see progress
 - take care of error when retweet/fav tweet
 - use time to select tweet post only after last time the bot has ran
+- sort historic tweet by post time
+- add new mentionned accounts to the list of account to scrap

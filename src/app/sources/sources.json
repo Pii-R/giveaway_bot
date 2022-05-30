@@ -1,16 +1,37 @@
 {
   "sources": [
-    { "account": "TopAchat" },
-    { "account": "CdiscountGaming" },
-    { "account": "HypergamesA" },
-    { "account": "karmaaOfficiel" },
-    { "account": "XboxOrNot" },
-    { "account": "AccLocck" },
-    { "account": "RazerFrance" },
-    { "account": "ESL_PwnZ" },
-    { "account": "ESL_PwnZ" },
-    { "account": "insertcoinFR" },
-    { "account": "Truffaut" },
-    { "account": "SteelSeriesFR" }
+    {
+      "account": "TopAchat"
+    },
+    {
+      "account": "CdiscountGaming"
+    },
+    {
+      "account": "HypergamesA"
+    },
+    {
+      "account": "karmaaOfficiel"
+    },
+    {
+      "account": "XboxOrNot"
+    },
+    {
+      "account": "AccLocck"
+    },
+    {
+      "account": "RazerFrance"
+    },
+    {
+      "account": "ESL_PwnZ"
+    },
+    {
+      "account": "insertcoinFR"
+    },
+    {
+      "account": "Truffaut"
+    },
+    {
+      "account": "SteelSeriesFR"
+    }
   ]
 }

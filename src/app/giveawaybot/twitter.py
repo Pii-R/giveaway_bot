@@ -115,14 +115,26 @@ class twitter:
                 return success_response
             return fail_response
 
+    def get_user_name_from_id(self, user_id: int):
+        """Gets the name of the user with the given id
+
+        Args:
+            user_id (int): id of the user
+
+        Returns:
+            str: name of the user
+        """
+        return self.api.get_user(user_id=user_id).screen_name
+
 
 if __name__ == "__main__":
     t = twitter()
+    # print(t.api.create_favorite(id=1234).status)
     # t.follow_account(1225440114832281600)
     # t.like_tweet(1529401913602625536)
     # t.retweet(1529401913602625536)
     # print(t.follow_account(1537646028))
-    print(t.is_already_liked(1529401913602625536))
+    # print(t.is_already_liked(1529401913602625536))
     # print(t.follow_account(1537646028))
 
     # print(t.api.last_response.status_code)
