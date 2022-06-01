@@ -9,7 +9,7 @@ RESULTS_DIR = Path(__file__).parent.parent.absolute() / "outputs"
 
 class giveAwayBot:
     def __init__(self):
-        self.t = twitter()
+        pass
 
     def create_empty_scrap_results_file(self):
         with open(RESULTS_DIR / "scrap_results.jsonl", "w") as scrap_results_file:
