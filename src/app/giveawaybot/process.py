@@ -38,13 +38,6 @@ def sort_by_post_time(record: dict):
     return sorted(dict, key=lambda tweet: tweet["post_time"])
 
 
-def read_last_results(result_file: str):
-    result_file_path = RESULTS_DIR / result_file
-    with open(result_file_path, "r", encoding="utf-8") as r_file:
-        for record in r_file:
-            print(record)
-
-
 def is_participation_complete(status: dict):
     """return True if participation is complete else False
 
