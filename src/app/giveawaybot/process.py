@@ -1,12 +1,19 @@
 # coding: utf-8
 from pathlib import Path
 from datetime import datetime
+from typing import TextIO
 import json, os
 from .detect import detect_giveaway
 from .twitter import twitter as tw
 
 RESULTS_DIR = Path(__file__).parent.parent.absolute() / "outputs"
 SOURCES_DIR = Path(__file__).parent.parent.absolute() / "sources"
+
+
+class ProcessTweets:
+    def __init__(self):
+        self.t = tw()
+        self.list_tweets = []
 
 
 def create_historic_file(historic_file: str):
@@ -108,16 +115,16 @@ def return_list_id_mentioned_users(mentioned_users: list):
     return [] if not mentioned_users else [user["id"] for user in mentioned_users]
 
 
-def add_new_users_to_sources(list_new_users: list):
+def add_new_users_to_sources(list_new_users: list, source_file: str):
     """add new users to the sources filess
 
     Args:
         list_new_users (list): list of new users
 
     Returns:
-        None: add new users to the sources files
+        list: add new users to the sources files and return list of new users {account:account_name}
     """
-    with open(SOURCES_DIR / "sources.json", "r", encoding="utf-8") as sources_file:
+    with open(source_file, "r", encoding="utf-8") as sources_file:
         t = tw()
         sources_file_data = json.load(sources_file)
         already_in_sources = [user["account"] for user in sources_file_data["sources"]]
@@ -125,15 +132,13 @@ def add_new_users_to_sources(list_new_users: list):
             name_potential_user = t.get_user_name_from_id(potential_user)
             if name_potential_user not in already_in_sources:
                 sources_file_data["sources"].append({"account": name_potential_user})
-    with open(RESULTS_DIR / "sources.json", "w", encoding="utf-8") as sources_file:
+    with open(source_file, "w", encoding="utf-8") as sources_file:
         json.dump(sources_file_data, sources_file)
+    return sources_file_data
 
 
-#
-# for user in list_new_users:
-# if user not in sources:
-# sources.append(user)
-# return sources
+def process_new_tweets(r_file: TextIO, historic_file: str):
+    pass
 
 
 def update_tweet_lists(scrap_result_file: str, historic_file: str):
@@ -189,7 +194,9 @@ def update_tweet_lists(scrap_result_file: str, historic_file: str):
                     data["overall_status"] = is_participation_complete(status)
                     historic["tweets"].append(data)
                     new_record_to_process += 1
-                add_new_users_to_sources(all_new_mentionned_users)
+                add_new_users_to_sources(
+                    all_new_mentionned_users, SOURCES_DIR / "sources.json"
+                )
             print(f"{new_record_to_process} new records have been processed")
     print("write historic file")
     with open(RESULTS_DIR / historic_file, "w") as new_hist_file:
@@ -197,5 +204,4 @@ def update_tweet_lists(scrap_result_file: str, historic_file: str):
 
 
 if __name__ == "__main__":
-    # read_last_results("scrap_results.jsonl")
     update_tweet_lists("test_tweet.jsonl", "test_tweets_historic.json")

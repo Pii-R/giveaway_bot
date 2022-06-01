@@ -1,5 +1,6 @@
 import os, json, datetime
 from pathlib import Path
+from re import S
 
 RESULTS_DIR = Path(__file__).parent.parent.absolute() / "outputs"
 SOURCE_DIR = Path(__file__).parent.parent.absolute() / "sources"
@@ -45,8 +46,7 @@ def run_scraping(scraping_params: dict):
     Args:
         params (dict): {max_result:int,search:int,class:str}
     """
-    # date = datetime.datetime.now().strftime("%Y-%m-%d")
-    date = "2022-05-10"
+    date = scraping_params["start_time"]
     search = scraping_params["search"]
     search_class = scraping_params["class_search"]
     max_results = scraping_params["max_results"]

@@ -1,37 +1,64 @@
 {
-  "sources": [
-    {
-      "account": "TopAchat"
-    },
-    {
-      "account": "CdiscountGaming"
-    },
-    {
-      "account": "HypergamesA"
-    },
-    {
-      "account": "karmaaOfficiel"
-    },
-    {
-      "account": "XboxOrNot"
-    },
-    {
-      "account": "AccLocck"
-    },
-    {
-      "account": "RazerFrance"
-    },
-    {
-      "account": "ESL_PwnZ"
-    },
-    {
-      "account": "insertcoinFR"
-    },
-    {
-      "account": "Truffaut"
-    },
-    {
-      "account": "SteelSeriesFR"
-    }
-  ]
+    "sources": [
+        {
+            "account": "TopAchat"
+        },
+        {
+            "account": "CdiscountGaming"
+        },
+        {
+            "account": "HypergamesA"
+        },
+        {
+            "account": "karmaaOfficiel"
+        },
+        {
+            "account": "XboxOrNot"
+        },
+        {
+            "account": "AccLocck"
+        },
+        {
+            "account": "RazerFrance"
+        },
+        {
+            "account": "ESL_PwnZ"
+        },
+        {
+            "account": "insertcoinFR"
+        },
+        {
+            "account": "Truffaut"
+        },
+        {
+            "account": "SteelSeriesFR"
+        },
+        {
+            "account": "TMThrustmaster"
+        },
+        {
+            "account": "TheGuill84"
+        },
+        {
+            "account": "seagategaming"
+        },
+        {
+            "account": "GUNNARFRANCE"
+        },
+        {
+            "account": "AzodPromoter"
+        },
+        {
+            "account": "PlayStationFR"
+        },
+        {
+            "account": "FRhardware"
+        },
+        {
+            "account": "coolermasterfr"
+        },
+        {
+            "account": "coolermasterfr"
+        }
+    ]
 }
