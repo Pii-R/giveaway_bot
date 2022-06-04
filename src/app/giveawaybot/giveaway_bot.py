@@ -17,12 +17,12 @@ class giveAwayBot:
 
     def run_bot(self):
         ## get latest tweets
-        start_time = "2022-05-24"
+        start_time = "2022-05-30"
         # datetime.datetime.now()
         scraping_params = {
             "search": "#concours",
             "class_search": "twitter-search",
-            "max_results": 30,
+            "max_results": 10,
             "start_time": start_time,
         }
         if scraping_params["max_results"] > 0:

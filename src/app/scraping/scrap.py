@@ -53,7 +53,8 @@ def run_scraping(scraping_params: dict):
     filename = RESULTS_DIR / "scrap_results.jsonl"
     sources = export_sources_accounts(SOURCE_DIR / "sources.json")
     formated_sources = format_sources_for_query(sources)
-    command = f"snscrape --jsonl --max-results {max_results} {search_class} '{formated_sources} {search} since:{date} exclude:replies' > {filename}"
+
+    command = f"snscrape --jsonl --max-results {max_results} {search_class} '{formated_sources} {search} exclude:replies' > {filename}"
     print(f"run scraping...\n{max_results} tweets are scraped")
     os.system(command)
 

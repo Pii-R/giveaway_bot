@@ -130,14 +130,60 @@ def add_new_users_to_sources(list_new_users: list, source_file: str):
     return sources_file_data
 
 
-def process_new_tweets(r_file: TextIO, historic_file: str):
-    pass
+def complete_old_tweets(hist_file: TextIO, historic: dict) -> list:
+    list_current_id = []
+    print("check if tweet is already in historic file")
+    historic_record_to_update = 0
+    for historic_record in historic["tweets"]:
+        list_current_id.append(historic_record["tweet_id"])
+        if not historic_record["overall_status"]:
+            print(f"{historic_record['tweet_id']} is not completed")
+            status = take_part_in_giveaway_from_record(historic_record)
+            historic_record["status"] = status
+            historic_record["overall_status"] = is_participation_complete(status)
+            historic_record_to_update += 1
+    print(f"{historic_record_to_update} records have been updated")
+    return list_current_id
+
+
+def process_new_tweets(
+    r_file: TextIO, historic_file: TextIO, historic: dict, list_current_id: list
+):
+    """process new tweets"""
+    new_record_to_process = 0
+    all_new_mentionned_users = []
+    for new_line_record in r_file:
+        new_record = json.loads(new_line_record)
+        is_giveaway = detect_giveaway(new_record["content"])
+        if new_record["id"] not in list_current_id:
+            list_mentioned_users = return_list_id_mentioned_users(
+                new_record["mentionedUsers"]
+            )
+            [all_new_mentionned_users.append(u) for u in list_mentioned_users]
+            data = {
+                "accound_id": new_record["user"]["id"],
+                "tweet_id": new_record["id"],
+                "url": new_record["url"],
+                "post_time": new_record["date"],
+                "process_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "mentionned_accounts_id": list_mentioned_users,
+                "is_giveaway": is_giveaway,
+            }
+            status = take_part_in_giveaway_from_record(data)
+            data["status"] = status
+            data["overall_status"] = is_participation_complete(status)
+            historic["tweets"].append(data)
+            new_record_to_process += 1
+        add_new_users_to_sources(all_new_mentionned_users, SOURCES_DIR / "sources.json")
+    print(f"{new_record_to_process} new records have been processed")
+    print("write historic file")
+    with open(RESULTS_DIR / historic_file, "w") as new_hist_file:
+        json.dump(historic, new_hist_file)
 
 
 def update_tweet_lists(scrap_result_file: str, historic_file: str):
     """update tweet lists from scrap result file and historic file
     one part of this function is to update the historic file and search for new tweets
-
     Args:
         scrap_result_file (str): _description_
         historic_file (str): _description_
@@ -146,54 +192,9 @@ def update_tweet_lists(scrap_result_file: str, historic_file: str):
     list_current_id = []
     with open(RESULTS_DIR / historic_file, "r+") as hist_file:
         with open(RESULTS_DIR / scrap_result_file, "r") as r_file:
-            # do a function with hist_file as a parameter
             historic = json.load(hist_file)
-            print("check if tweet is already in historic file")
-            historic_record_to_update = 0
-            for historic_record in historic["tweets"]:
-                list_current_id.append(historic_record["tweet_id"])
-                if not historic_record["overall_status"]:
-                    print(f"{historic_record['tweet_id']} is not completed")
-                    status = take_part_in_giveaway_from_record(historic_record)
-                    historic_record["status"] = status
-                    historic_record["overall_status"] = is_participation_complete(
-                        status
-                    )
-                    historic_record_to_update += 1
-            print(f"{historic_record_to_update} records have been updated")
-            print("process new tweets")
-            # do a function with r_file as a parameter
-            new_record_to_process = 0
-            all_new_mentionned_users = []
-            for new_line_record in r_file:
-                new_record = json.loads(new_line_record)
-                is_giveaway = detect_giveaway(new_record["content"])
-                if new_record["id"] not in list_current_id:
-                    list_mentioned_users = return_list_id_mentioned_users(
-                        new_record["mentionedUsers"]
-                    )
-                    [all_new_mentionned_users.append(u) for u in list_mentioned_users]
-                    data = {
-                        "accound_id": new_record["user"]["id"],
-                        "tweet_id": new_record["id"],
-                        "url": new_record["url"],
-                        "post_time": new_record["date"],
-                        "process_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                        "mentionned_accounts_id": list_mentioned_users,
-                        "is_giveaway": is_giveaway,
-                    }
-                    status = take_part_in_giveaway_from_record(data)
-                    data["status"] = status
-                    data["overall_status"] = is_participation_complete(status)
-                    historic["tweets"].append(data)
-                    new_record_to_process += 1
-                add_new_users_to_sources(
-                    all_new_mentionned_users, SOURCES_DIR / "sources.json"
-                )
-            print(f"{new_record_to_process} new records have been processed")
-    print("write historic file")
-    with open(RESULTS_DIR / historic_file, "w") as new_hist_file:
-        json.dump(historic, new_hist_file)
+            list_current_id = complete_old_tweets(hist_file, historic)
+            process_new_tweets(r_file, historic_file, historic, list_current_id)
 
 
 if __name__ == "__main__":
