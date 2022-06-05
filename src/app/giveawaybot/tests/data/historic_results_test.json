@@ -1,0 +1,123 @@
+{
+    "tweets": [
+        {
+            "accound_id": 106355755,
+            "tweet_id": 1531329340826210306,
+            "url": "https://twitter.com/TopAchat/status/1531329340826210306",
+            "post_time": "2022-05-30T17:39:00+00:00",
+            "process_time": "2022-05-31 20:17:31",
+            "mentionned_accounts_id": [],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "106355755": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1531329340826210306": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1531329340826210306": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 106355755,
+            "tweet_id": 1531213837722169344,
+            "url": "https://twitter.com/TopAchat/status/1531213837722169344",
+            "post_time": "2022-05-30T10:00:02+00:00",
+            "process_time": "2022-05-31 20:17:35",
+            "mentionned_accounts_id": [
+                106355755
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "106355755": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "106355755": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1531213837722169344": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1531213837722169344": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 1225440114832281600,
+            "tweet_id": 1531166014334980096,
+            "url": "https://twitter.com/CdiscountGaming/status/1531166014334980096",
+            "post_time": "2022-05-30T06:50:00+00:00",
+            "process_time": "2022-05-31 20:17:39",
+            "mentionned_accounts_id": [
+                590901564,
+                1225440114832281600
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "590901564": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "1225440114832281600": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "1225440114832281600": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1531166014334980096": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1531166014334980096": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        }
+    ]
+}

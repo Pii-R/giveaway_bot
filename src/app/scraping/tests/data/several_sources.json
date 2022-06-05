@@ -1,0 +1,37 @@
+{
+    "sources": [
+        {
+            "account": "account1"
+        },
+        {
+            "account": "account2"
+        },
+        {
+            "account": "account3"
+        },
+        {
+            "account": "account4"
+        },
+        {
+            "account": "account5"
+        },
+        {
+            "account": "account6"
+        },
+        {
+            "account": "account7"
+        },
+        {
+            "account": "account8"
+        },
+        {
+            "account": "account9"
+        },
+        {
+            "account": "account10"
+        },
+        {
+            "account": "account11"
+        }
+    ]
+}

@@ -1,21 +1,22 @@
 # coding: utf-8
 "fonctions used for analyzing tweet and return what kind of message there is inside"
 from .twitter import twitter
-from .utils import remove_emoji
+from .text_cleaning import remove_emoji
 from nltk.tokenize import word_tokenize
 
-def detect_giveaway(tweet:str)->bool:
+
+def detect_giveaway(tweet: str) -> bool:
     """use this fonction to determine if a tweet is about a giveaway or not
     Args:
         tweet (str): tweet text to analyze
     Returns:
         bool: True if tweet talks about giveaway False if not
-    """    
-    giveaway_words_list = ["participer","concours","gagner","gagnant"]
+    """
+    giveaway_words_list = ["participer", "concours", "gagner", "gagnant"]
     format_tweet = remove_emoji(tweet.lower())
     tokenized_format_tweet = word_tokenize(format_tweet)
-    l=[char in giveaway_words_list for char in tokenized_format_tweet]
-    if True in l :
+    l = [char in giveaway_words_list for char in tokenized_format_tweet]
+    if True in l:
         return True
     return False
 
