@@ -13,7 +13,6 @@ SOURCES_DIR = Path(__file__).parent.parent.absolute() / "sources"
 class ProcessTweets:
     def __init__(self):
         self.t = tw()
-        self.list_tweets = []
 
 
 def create_historic_file(historic_file: str):
@@ -33,8 +32,6 @@ def sort_by_post_time(record: dict):
         list: sorted dict of tweets
 
     """
-    # todo test this function
-    {k: v for k, v in sorted(record.items(), key=lambda item: item["post_time"])}
     return sorted(dict, key=lambda tweet: tweet["post_time"])
 
 
@@ -130,7 +127,7 @@ def add_new_users_to_sources(list_new_users: list, source_file: str):
     return sources_file_data
 
 
-def complete_old_tweets(hist_file: TextIO, historic: dict) -> list:
+def complete_old_tweets(historic: dict) -> list:
     list_current_id = []
     print("check if tweet is already in historic file")
     historic_record_to_update = 0
@@ -150,6 +147,7 @@ def process_new_tweets(
     r_file: TextIO, historic_file: TextIO, historic: dict, list_current_id: list
 ):
     """process new tweets"""
+    print("process new tweets")
     new_record_to_process = 0
     all_new_mentionned_users = []
     for new_line_record in r_file:
@@ -193,7 +191,7 @@ def update_tweet_lists(scrap_result_file: str, historic_file: str):
     with open(RESULTS_DIR / historic_file, "r+") as hist_file:
         with open(RESULTS_DIR / scrap_result_file, "r") as r_file:
             historic = json.load(hist_file)
-            list_current_id = complete_old_tweets(hist_file, historic)
+            list_current_id = complete_old_tweets(historic)
             process_new_tweets(r_file, historic_file, historic, list_current_id)
 
 
