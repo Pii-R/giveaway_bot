@@ -126,6 +126,17 @@ class twitter:
         """
         return self.api.get_user(user_id=user_id).screen_name
 
+    def get_tweet(self, tweet_id: int):
+        """Gets a tweet with the given id
+
+        Args:
+            tweet_id (int): id of the tweet
+
+        Returns:
+            str: tweet
+        """
+        return self.api.get_status(tweet_id=tweet_id, tweet_mode="extended")
+
 
 if __name__ == "__main__":
     t = twitter()
