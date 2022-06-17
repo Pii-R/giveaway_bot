@@ -1,6 +1,6 @@
 from .twitter import twitter
 from app.scraping.scrap import run_scraping
-from .process import update_tweet_lists
+from app.giveawaybot.process import update_tweet_lists
 from pathlib import Path
 import datetime, os
 

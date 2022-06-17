@@ -1,10 +1,19 @@
 import os, json, datetime
 from pathlib import Path
+from typing import List
 
 RESULTS_DIR = Path(__file__).parent.parent.absolute() / "outputs"
 SOURCE_DIR = Path(__file__).parent.parent.absolute() / "sources"
 
-
+ 
+def create_scrap_results_file():
+    """create the file outputs/scrap_results.jsonl
+    """
+    scrap_results = RESULTS_DIR / "scrap_results.jsonl"
+    if not scrap_results.is_file():
+        with open(RESULTS_DIR / "scrap_results.jsonl", "w", encoding="utf-8") as f:
+            pass
+ 
 def export_sources_accounts(file: str):
     """export accounts to scrap from sources.json
 
@@ -12,8 +21,9 @@ def export_sources_accounts(file: str):
         file (str): file path where sources.json is located
 
     Returns:
-        _type_: list
+        _type_: List
     """
+    
     with open(file, "r", encoding="utf-8") as sources_file:
         sources = json.load(sources_file)
         list_sources_account = [s["account"] for s in sources["sources"]]
@@ -21,15 +31,15 @@ def export_sources_accounts(file: str):
 
 
 def divide_source_accounts_into_chunks(
-    sources_accounts: list, chunk_size: int
-) -> list[list]:
-    """divide the list of accounts into chunks of size chunk_size
+    sources_accounts: List, chunk_size: int
+) -> List[List]:
+    """divide the List of accounts into chunks of size chunk_size
 
     Args:
-        sources_accounts (list): list of accounts to scrap
+        sources_accounts (List): List of accounts to scrap
 
     Returns:
-        list: list of chunks of accounts
+        List: List of chunks of accounts
     """
     if chunk_size == 0:
         return []
@@ -39,11 +49,11 @@ def divide_source_accounts_into_chunks(
     ]
 
 
-def format_one_sources_chunck_for_query(chunck_source: list) -> str:
+def format_one_sources_chunck_for_query(chunck_source: List) -> str:
     """format the query to scrap with all the accounts from sources.json
 
     Args:
-        sources_account (list): list of accounts to scrap
+        sources_account (List): List of accounts to scrap
 
     Returns:
         str: str formatted for query
@@ -57,24 +67,25 @@ def format_one_sources_chunck_for_query(chunck_source: list) -> str:
         return formated_sources
 
 
-def execute_query(sources: list, scraping_params: dict):
-    """takes a list of accounts and a dict of params and execute the query t
+def execute_query(sources: List, scraping_params: dict):
+    """takes a List of accounts and a dict of params and execute the query t
 
     Args:
-        sources (list): flatten list of accounts to scrap
+        sources (List): flatten List of accounts to scrap
         scraping_params (dict): dict containing the params to scrap
     """
     output_scrap_file = RESULTS_DIR / "scrap_results.jsonl"
+    create_scrap_results_file()
     search = scraping_params["search"]
     search_class = scraping_params["class_search"]
     max_results = scraping_params["max_results"]
     start_time = scraping_params["start_time"]
-    sources = export_sources_accounts(SOURCE_DIR / "sources.json")
+    sources = export_sources_accounts(SOURCE_DIR / "sources.json") 
     chunck_sources = divide_source_accounts_into_chunks(sources, 5)
     with open(RESULTS_DIR / "global_scrap_results.jsonl", "a", encoding="utf-8") as g:
         for i, chunck_source in enumerate(chunck_sources):
             formatted_chunck_source = format_one_sources_chunck_for_query(chunck_source)
-            command = f"snscrape --jsonl --max-results {max_results} {search_class} '{formatted_chunck_source} {search} since:{start_time} exclude:replies' > {output_scrap_file}"
+            command = f"""snscrape --jsonl --max-results {max_results} {search_class} "{formatted_chunck_source} {search} since:{start_time} exclude:replies" > {output_scrap_file}"""
             os.system(command)
             with open(output_scrap_file, "r", encoding="utf-8") as f:
                 g.write(f.read())
