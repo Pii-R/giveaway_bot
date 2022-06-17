@@ -21,7 +21,7 @@ class giveAwayBot:
 
     def run_bot(self):
         self.delete_old_scrap_results_file(RESULTS_DIR / "global_scrap_results.jsonl")
-        start_time = (datetime.datetime.now() - datetime.timedelta(days=3)).strftime(
+        start_time = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime(
             "%Y-%m-%d"
         )
         scraping_params = {
