@@ -1,4 +1,3 @@
-from .twitter import twitter
 from app.scraping.scrap import run_scraping
 from app.giveawaybot.process import update_tweet_lists
 from pathlib import Path
