@@ -10,11 +10,6 @@ RESULTS_DIR = Path(__file__).parent.parent.absolute() / "outputs"
 SOURCES_DIR = Path(__file__).parent.parent.absolute() / "sources"
 
 
-class ProcessTweets:
-    def __init__(self):
-        self.t = tw()
-
-
 def create_historic_file(historic_file: str):
     if not os.path.isfile(RESULTS_DIR / historic_file):
         with open(RESULTS_DIR / historic_file, "w") as hist_file:
@@ -102,7 +97,7 @@ def return_list_id_mentioned_users(mentioned_users: list):
     Returns:
         list: id list of mentioned users
     """
-    return [] if not mentioned_users else [user["id"] for user in mentioned_users]
+    return [user["id"] for user in mentioned_users] if mentioned_users else []
 
 
 def add_new_users_to_sources(list_new_users: list, source_file: str):
