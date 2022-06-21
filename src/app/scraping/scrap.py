@@ -1,4 +1,4 @@
-import os, json, datetime
+import os, json
 from pathlib import Path
 from typing import List
 
@@ -11,7 +11,7 @@ def create_scrap_results_file():
     """
     scrap_results = RESULTS_DIR / "scrap_results.jsonl"
     if not scrap_results.is_file():
-        with open(RESULTS_DIR / "scrap_results.jsonl", "w", encoding="utf-8") as f:
+        with open(scrap_results, "w", encoding="utf-8") as f:
             pass
  
 def export_sources_accounts(file: str):
@@ -26,8 +26,7 @@ def export_sources_accounts(file: str):
     
     with open(file, "r", encoding="utf-8") as sources_file:
         sources = json.load(sources_file)
-        list_sources_account = [s["account"] for s in sources["sources"]]
-        return list_sources_account
+        return [s["account"] for s in sources["sources"]]
 
 
 def divide_source_accounts_into_chunks(
@@ -80,10 +79,10 @@ def execute_query(sources: List, scraping_params: dict):
     search_class = scraping_params["class_search"]
     max_results = scraping_params["max_results"]
     start_time = scraping_params["start_time"]
-    sources = export_sources_accounts(SOURCE_DIR / "sources.json") 
+    sources = export_sources_accounts(SOURCE_DIR / "sources.json")
     chunck_sources = divide_source_accounts_into_chunks(sources, 5)
     with open(RESULTS_DIR / "global_scrap_results.jsonl", "a", encoding="utf-8") as g:
-        for i, chunck_source in enumerate(chunck_sources):
+        for chunck_source in chunck_sources:
             formatted_chunck_source = format_one_sources_chunck_for_query(chunck_source)
             command = f"""snscrape --jsonl --max-results {max_results} {search_class} "{formatted_chunck_source} {search} since:{start_time} exclude:replies" > {output_scrap_file}"""
             os.system(command)
