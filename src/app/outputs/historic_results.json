@@ -4320,6 +4320,1958 @@
                 ]
             },
             "overall_status": true
+        },
+        {
+            "accound_id": 63142684,
+            "tweet_id": 1539197687014236160,
+            "url": "https://twitter.com/Cdiscount/status/1539197687014236160",
+            "post_time": "2022-06-21T10:45:00+00:00",
+            "process_time": "2022-06-22 11:11:19",
+            "mentionned_accounts_id": [
+                63142684
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "63142684": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "63142684": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1539197687014236160": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1539197687014236160": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 70748326,
+            "tweet_id": 1538925632444309505,
+            "url": "https://twitter.com/SWUcom/status/1538925632444309505",
+            "post_time": "2022-06-20T16:43:57+00:00",
+            "process_time": "2022-06-22 11:11:22",
+            "mentionned_accounts_id": [
+                70748326,
+                110376815
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "70748326": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "110376815": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "70748326": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1538925632444309505": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1538925632444309505": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 63142684,
+            "tweet_id": 1538764843997548544,
+            "url": "https://twitter.com/Cdiscount/status/1538764843997548544",
+            "post_time": "2022-06-20T06:05:02+00:00",
+            "process_time": "2022-06-22 11:11:27",
+            "mentionned_accounts_id": [
+                63142684
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "63142684": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "63142684": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1538764843997548544": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1538764843997548544": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 63142684,
+            "tweet_id": 1537113956854145024,
+            "url": "https://twitter.com/Cdiscount/status/1537113956854145024",
+            "post_time": "2022-06-15T16:45:00+00:00",
+            "process_time": "2022-06-22 11:11:30",
+            "mentionned_accounts_id": [
+                63142684
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "63142684": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "63142684": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1537113956854145024": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1537113956854145024": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 63142684,
+            "tweet_id": 1536962962170290176,
+            "url": "https://twitter.com/Cdiscount/status/1536962962170290176",
+            "post_time": "2022-06-15T06:45:00+00:00",
+            "process_time": "2022-06-22 11:11:34",
+            "mentionned_accounts_id": [],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "63142684": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1536962962170290176": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1536962962170290176": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 4502885068,
+            "tweet_id": 1538098399353905152,
+            "url": "https://twitter.com/VivaTech/status/1538098399353905152",
+            "post_time": "2022-06-18T09:56:49+00:00",
+            "process_time": "2022-06-22 11:12:09",
+            "mentionned_accounts_id": [],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "4502885068": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1538098399353905152": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1538098399353905152": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 6629022,
+            "tweet_id": 1538087873186078723,
+            "url": "https://twitter.com/pressecitron/status/1538087873186078723",
+            "post_time": "2022-06-18T09:14:59+00:00",
+            "process_time": "2022-06-22 11:12:12",
+            "mentionned_accounts_id": [
+                57691450,
+                47386712,
+                550293716
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "47386712": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "550293716": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "6629022": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1538087873186078723": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1538087873186078723": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 57691450,
+            "tweet_id": 1537782728531316736,
+            "url": "https://twitter.com/GroupeLaPoste/status/1537782728531316736",
+            "post_time": "2022-06-17T13:02:27+00:00",
+            "process_time": "2022-06-22 11:12:18",
+            "mentionned_accounts_id": [
+                57691450
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1537782728531316736": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1537782728531316736": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 6629022,
+            "tweet_id": 1537750482550198275,
+            "url": "https://twitter.com/pressecitron/status/1537750482550198275",
+            "post_time": "2022-06-17T10:54:19+00:00",
+            "process_time": "2022-06-22 11:12:22",
+            "mentionned_accounts_id": [
+                57691450
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "6629022": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1537750482550198275": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1537750482550198275": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 6629022,
+            "tweet_id": 1537747413523382272,
+            "url": "https://twitter.com/pressecitron/status/1537747413523382272",
+            "post_time": "2022-06-17T10:42:08+00:00",
+            "process_time": "2022-06-22 11:12:27",
+            "mentionned_accounts_id": [
+                57691450
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "6629022": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1537747413523382272": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1537747413523382272": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 57691450,
+            "tweet_id": 1537711709946798080,
+            "url": "https://twitter.com/GroupeLaPoste/status/1537711709946798080",
+            "post_time": "2022-06-17T08:20:15+00:00",
+            "process_time": "2022-06-22 11:12:32",
+            "mentionned_accounts_id": [
+                57691450
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1537711709946798080": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1537711709946798080": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 6629022,
+            "tweet_id": 1537697566124654592,
+            "url": "https://twitter.com/pressecitron/status/1537697566124654592",
+            "post_time": "2022-06-17T07:24:03+00:00",
+            "process_time": "2022-06-22 11:12:37",
+            "mentionned_accounts_id": [
+                4018357937,
+                57691450
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "4018357937": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "6629022": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1537697566124654592": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1537697566124654592": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 57691450,
+            "tweet_id": 1537442144960401410,
+            "url": "https://twitter.com/GroupeLaPoste/status/1537442144960401410",
+            "post_time": "2022-06-16T14:29:06+00:00",
+            "process_time": "2022-06-22 11:12:43",
+            "mentionned_accounts_id": [
+                57691450,
+                4502885068
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "4502885068": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1537442144960401410": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1537442144960401410": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 57691450,
+            "tweet_id": 1537435617344114692,
+            "url": "https://twitter.com/GroupeLaPoste/status/1537435617344114692",
+            "post_time": "2022-06-16T14:03:10+00:00",
+            "process_time": "2022-06-22 11:12:50",
+            "mentionned_accounts_id": [
+                57691450
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1537435617344114692": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1537435617344114692": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 57691450,
+            "tweet_id": 1537407911818846209,
+            "url": "https://twitter.com/GroupeLaPoste/status/1537407911818846209",
+            "post_time": "2022-06-16T12:13:04+00:00",
+            "process_time": "2022-06-22 11:12:56",
+            "mentionned_accounts_id": [
+                57691450
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1537407911818846209": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1537407911818846209": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 57691450,
+            "tweet_id": 1537404998962798593,
+            "url": "https://twitter.com/GroupeLaPoste/status/1537404998962798593",
+            "post_time": "2022-06-16T12:01:30+00:00",
+            "process_time": "2022-06-22 11:13:03",
+            "mentionned_accounts_id": [
+                873845580757434368,
+                57691450
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "873845580757434368": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1537404998962798593": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1537404998962798593": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 57691450,
+            "tweet_id": 1537391586140725248,
+            "url": "https://twitter.com/GroupeLaPoste/status/1537391586140725248",
+            "post_time": "2022-06-16T11:08:12+00:00",
+            "process_time": "2022-06-22 11:13:11",
+            "mentionned_accounts_id": [
+                57691450
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1537391586140725248": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1537391586140725248": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 57691450,
+            "tweet_id": 1537370435653885953,
+            "url": "https://twitter.com/GroupeLaPoste/status/1537370435653885953",
+            "post_time": "2022-06-16T09:44:09+00:00",
+            "process_time": "2022-06-22 11:13:18",
+            "mentionned_accounts_id": [
+                57691450
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1537370435653885953": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1537370435653885953": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 6629022,
+            "tweet_id": 1537370259124109312,
+            "url": "https://twitter.com/pressecitron/status/1537370259124109312",
+            "post_time": "2022-06-16T09:43:27+00:00",
+            "process_time": "2022-06-22 11:13:25",
+            "mentionned_accounts_id": [],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "6629022": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1537370259124109312": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1537370259124109312": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 6629022,
+            "tweet_id": 1537368887762755584,
+            "url": "https://twitter.com/pressecitron/status/1537368887762755584",
+            "post_time": "2022-06-16T09:38:00+00:00",
+            "process_time": "2022-06-22 11:13:32",
+            "mentionned_accounts_id": [
+                57691450,
+                4018357937,
+                47386712
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "4018357937": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "47386712": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "6629022": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1537368887762755584": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1537368887762755584": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 57691450,
+            "tweet_id": 1537359366956933120,
+            "url": "https://twitter.com/GroupeLaPoste/status/1537359366956933120",
+            "post_time": "2022-06-16T09:00:10+00:00",
+            "process_time": "2022-06-22 11:13:41",
+            "mentionned_accounts_id": [
+                777608381381173248,
+                57691450
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "777608381381173248": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1537359366956933120": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1537359366956933120": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 6629022,
+            "tweet_id": 1537356628311388160,
+            "url": "https://twitter.com/pressecitron/status/1537356628311388160",
+            "post_time": "2022-06-16T08:49:17+00:00",
+            "process_time": "2022-06-22 11:13:51",
+            "mentionned_accounts_id": [
+                57691450
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "6629022": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1537356628311388160": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1537356628311388160": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 6629022,
+            "tweet_id": 1537354564218781696,
+            "url": "https://twitter.com/pressecitron/status/1537354564218781696",
+            "post_time": "2022-06-16T08:41:05+00:00",
+            "process_time": "2022-06-22 11:14:00",
+            "mentionned_accounts_id": [
+                57691450
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "6629022": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1537354564218781696": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1537354564218781696": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 57691450,
+            "tweet_id": 1537093097489932290,
+            "url": "https://twitter.com/GroupeLaPoste/status/1537093097489932290",
+            "post_time": "2022-06-15T15:22:06+00:00",
+            "process_time": "2022-06-22 11:14:09",
+            "mentionned_accounts_id": [
+                57691450,
+                777608381381173248
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "777608381381173248": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1537093097489932290": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1537093097489932290": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 57691450,
+            "tweet_id": 1537044015325097984,
+            "url": "https://twitter.com/GroupeLaPoste/status/1537044015325097984",
+            "post_time": "2022-06-15T12:07:04+00:00",
+            "process_time": "2022-06-22 11:14:20",
+            "mentionned_accounts_id": [
+                1007551083684728832,
+                57691450
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "1007551083684728832": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1537044015325097984": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1537044015325097984": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 57691450,
+            "tweet_id": 1536992170468642816,
+            "url": "https://twitter.com/GroupeLaPoste/status/1536992170468642816",
+            "post_time": "2022-06-15T08:41:04+00:00",
+            "process_time": "2022-06-22 11:14:31",
+            "mentionned_accounts_id": [
+                57691450
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1536992170468642816": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1536992170468642816": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 6629022,
+            "tweet_id": 1536984869967904768,
+            "url": "https://twitter.com/pressecitron/status/1536984869967904768",
+            "post_time": "2022-06-15T08:12:03+00:00",
+            "process_time": "2022-06-22 11:14:41",
+            "mentionned_accounts_id": [
+                57691450
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "6629022": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1536984869967904768": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1536984869967904768": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 57691450,
+            "tweet_id": 1536982859063386118,
+            "url": "https://twitter.com/GroupeLaPoste/status/1536982859063386118",
+            "post_time": "2022-06-15T08:04:04+00:00",
+            "process_time": "2022-06-22 11:14:52",
+            "mentionned_accounts_id": [
+                57691450
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "57691450": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1536982859063386118": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1536982859063386118": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 6629022,
+            "tweet_id": 1536977249593073664,
+            "url": "https://twitter.com/pressecitron/status/1536977249593073664",
+            "post_time": "2022-06-15T07:41:46+00:00",
+            "process_time": "2022-06-22 11:15:03",
+            "mentionned_accounts_id": [
+                6629022,
+                63142684
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "6629022": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "63142684": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "6629022": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1536977249593073664": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1536977249593073664": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 28302970,
+            "tweet_id": 1541711237410656261,
+            "url": "https://twitter.com/LDLC/status/1541711237410656261",
+            "post_time": "2022-06-28T09:12:57+00:00",
+            "process_time": "2022-06-28 13:28:19",
+            "mentionned_accounts_id": [],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "28302970": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1541711237410656261": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1541711237410656261": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 58747912,
+            "tweet_id": 1541361947886718976,
+            "url": "https://twitter.com/JVCom/status/1541361947886718976",
+            "post_time": "2022-06-27T10:05:00+00:00",
+            "process_time": "2022-06-28 13:28:21",
+            "mentionned_accounts_id": [
+                58747912
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "58747912": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "58747912": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1541361947886718976": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1541361947886718976": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 106355755,
+            "tweet_id": 1541342822095282176,
+            "url": "https://twitter.com/TopAchat/status/1541342822095282176",
+            "post_time": "2022-06-27T08:49:00+00:00",
+            "process_time": "2022-06-28 13:28:23",
+            "mentionned_accounts_id": [],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "106355755": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1541342822095282176": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1541342822095282176": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 63142684,
+            "tweet_id": 1541009626371604480,
+            "url": "https://twitter.com/Cdiscount/status/1541009626371604480",
+            "post_time": "2022-06-26T10:45:00+00:00",
+            "process_time": "2022-06-28 13:28:25",
+            "mentionned_accounts_id": [
+                63142684
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "63142684": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "63142684": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1541009626371604480": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1541009626371604480": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 28302970,
+            "tweet_id": 1540007204257947652,
+            "url": "https://twitter.com/LDLC/status/1540007204257947652",
+            "post_time": "2022-06-23T16:21:44+00:00",
+            "process_time": "2022-06-28 13:28:28",
+            "mentionned_accounts_id": [],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "28302970": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1540007204257947652": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1540007204257947652": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 63142684,
+            "tweet_id": 1539852006583459840,
+            "url": "https://twitter.com/Cdiscount/status/1539852006583459840",
+            "post_time": "2022-06-23T06:05:02+00:00",
+            "process_time": "2022-06-28 13:28:31",
+            "mentionned_accounts_id": [
+                63142684
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "63142684": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "63142684": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1539852006583459840": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1539852006583459840": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 37632896,
+            "tweet_id": 1541722826436116481,
+            "url": "https://twitter.com/VirginRadiofr/status/1541722826436116481",
+            "post_time": "2022-06-28T09:59:00+00:00",
+            "process_time": "2022-06-28 13:28:34",
+            "mentionned_accounts_id": [
+                1319622537890889728
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "1319622537890889728": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "37632896": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1541722826436116481": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1541722826436116481": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 37632896,
+            "tweet_id": 1540998050260320257,
+            "url": "https://twitter.com/VirginRadiofr/status/1540998050260320257",
+            "post_time": "2022-06-26T09:59:00+00:00",
+            "process_time": "2022-06-28 13:28:37",
+            "mentionned_accounts_id": [
+                234776873,
+                37632896
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "234776873": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "37632896": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "37632896": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1540998050260320257": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1540998050260320257": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 1225440114832281600,
+            "tweet_id": 1540965586146033664,
+            "url": "https://twitter.com/CdiscountGaming/status/1540965586146033664",
+            "post_time": "2022-06-26T07:50:00+00:00",
+            "process_time": "2022-06-28 13:28:42",
+            "mentionned_accounts_id": [],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "1225440114832281600": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1540965586146033664": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1540965586146033664": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 37632896,
+            "tweet_id": 1540635662491144192,
+            "url": "https://twitter.com/VirginRadiofr/status/1540635662491144192",
+            "post_time": "2022-06-25T09:59:00+00:00",
+            "process_time": "2022-06-28 13:28:45",
+            "mentionned_accounts_id": [
+                602815050,
+                29413497
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "602815050": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "29413497": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "37632896": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1540635662491144192": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1540635662491144192": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 37632896,
+            "tweet_id": 1540364136780926976,
+            "url": "https://twitter.com/VirginRadiofr/status/1540364136780926976",
+            "post_time": "2022-06-24T16:00:03+00:00",
+            "process_time": "2022-06-28 13:28:50",
+            "mentionned_accounts_id": [],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "37632896": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1540364136780926976": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1540364136780926976": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 319024080,
+            "tweet_id": 1540349024817090567,
+            "url": "https://twitter.com/HypergamesA/status/1540349024817090567",
+            "post_time": "2022-06-24T15:00:00+00:00",
+            "process_time": "2022-06-28 13:28:54",
+            "mentionned_accounts_id": [
+                861590446769876993,
+                1250361045409038336
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "861590446769876993": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "1250361045409038336": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "319024080": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1540349024817090567": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1540349024817090567": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 1225440114832281600,
+            "tweet_id": 1540271009370103809,
+            "url": "https://twitter.com/CdiscountGaming/status/1540271009370103809",
+            "post_time": "2022-06-24T09:50:00+00:00",
+            "process_time": "2022-06-28 13:29:00",
+            "mentionned_accounts_id": [
+                1225440114832281600
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "1225440114832281600": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "1225440114832281600": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1540271009370103809": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1540271009370103809": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 37632896,
+            "tweet_id": 1539910886739025924,
+            "url": "https://twitter.com/VirginRadiofr/status/1539910886739025924",
+            "post_time": "2022-06-23T09:59:00+00:00",
+            "process_time": "2022-06-28 13:29:05",
+            "mentionned_accounts_id": [
+                234776873
+            ],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "234776873": {
+                            "success": true
+                        }
+                    },
+                    {
+                        "37632896": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1539910886739025924": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1539910886739025924": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 2305075788,
+            "tweet_id": 1541157311959498752,
+            "url": "https://twitter.com/XboxOrNot/status/1541157311959498752",
+            "post_time": "2022-06-26T20:31:51+00:00",
+            "process_time": "2022-06-28 13:29:10",
+            "mentionned_accounts_id": [],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "2305075788": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1541157311959498752": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1541157311959498752": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 1346785335980810240,
+            "tweet_id": 1539884516944539650,
+            "url": "https://twitter.com/RazerFrance/status/1539884516944539650",
+            "post_time": "2022-06-23T08:14:13+00:00",
+            "process_time": "2022-06-28 13:29:15",
+            "mentionned_accounts_id": [],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "1346785335980810240": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1539884516944539650": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1539884516944539650": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 1344057013,
+            "tweet_id": 1541689509536010240,
+            "url": "https://twitter.com/GUNNARFRANCE/status/1541689509536010240",
+            "post_time": "2022-06-28T07:46:36+00:00",
+            "process_time": "2022-06-28 13:29:20",
+            "mentionned_accounts_id": [],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "1344057013": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1541689509536010240": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1541689509536010240": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 1344057013,
+            "tweet_id": 1541512016388653058,
+            "url": "https://twitter.com/GUNNARFRANCE/status/1541512016388653058",
+            "post_time": "2022-06-27T20:01:19+00:00",
+            "process_time": "2022-06-28 13:29:25",
+            "mentionned_accounts_id": [],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "1344057013": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1541512016388653058": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1541512016388653058": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 1344057013,
+            "tweet_id": 1541323916546699264,
+            "url": "https://twitter.com/GUNNARFRANCE/status/1541323916546699264",
+            "post_time": "2022-06-27T07:33:52+00:00",
+            "process_time": "2022-06-28 13:29:29",
+            "mentionned_accounts_id": [],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "1344057013": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1541323916546699264": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1541323916546699264": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
+        },
+        {
+            "accound_id": 1346785335980810240,
+            "tweet_id": 1539884516944539650,
+            "url": "https://twitter.com/RazerFrance/status/1539884516944539650",
+            "post_time": "2022-06-23T08:14:13+00:00",
+            "process_time": "2022-06-28 13:29:34",
+            "mentionned_accounts_id": [],
+            "is_giveaway": true,
+            "status": {
+                "follow": [
+                    {
+                        "1346785335980810240": {
+                            "success": true
+                        }
+                    }
+                ],
+                "like": [
+                    {
+                        "1539884516944539650": {
+                            "success": true
+                        }
+                    }
+                ],
+                "rt": [
+                    {
+                        "1539884516944539650": {
+                            "success": true
+                        }
+                    }
+                ]
+            },
+            "overall_status": true
         }
     ]
 }

@@ -67,7 +67,7 @@ def format_one_sources_chunck_for_query(chunck_source: List) -> str:
 
 
 def execute_query(sources: List, scraping_params: dict):
-    """takes a List of accounts and a dict of params and execute the query t
+    """takes a List of accounts and a dict of params and execute the query
 
     Args:
         sources (List): flatten List of accounts to scrap

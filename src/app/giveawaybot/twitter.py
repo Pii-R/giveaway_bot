@@ -17,10 +17,6 @@ class twitter:
         )
         self.api = tweepy.API(self.auth)
 
-    def get_tweets_from_home_timeline(self):
-        public_tweets = self.api.home_timeline(count=200, tweet_mode="extended")
-        return [tweet.full_text for tweet in public_tweets]
-
     def get_tweet_by_id(self, id: int):
         """Gets a tweet by id
 
@@ -96,9 +92,7 @@ class twitter:
             self.api.retweet(tweet_id)
             return success_response
         except Forbidden as e:
-            if "already retweeted" in str(e):
-                return success_response
-            return fail_response
+            return success_response if "already retweeted" in str(e) else fail_response
 
     def like_tweet(self, tweet_id: int):
         """Likes a tweet with the given id
@@ -111,9 +105,7 @@ class twitter:
             self.api.create_favorite(tweet_id)
             return success_response
         except Forbidden as e:
-            if "already favorited" in str(e):
-                return success_response
-            return fail_response
+            return success_response if "already favorited" in str(e) else fail_response
 
     def get_user_name_from_id(self, user_id: int):
         """Gets the name of the user with the given id
@@ -140,14 +132,5 @@ class twitter:
 
 if __name__ == "__main__":
     t = twitter()
-    # print(t.api.create_favorite(id=1234).status)
-    # t.follow_account(1225440114832281600)
-    # t.like_tweet(1529401913602625536)
-    # t.retweet(1529401913602625536)
-    # print(t.follow_account(1537646028))
-    # print(t.is_already_liked(1529401913602625536))
-    # print(t.follow_account(1537646028))
+    t.follow_account(1225440114832281600)
 
-    # print(t.api.last_response.status_code)
-    # int(t.api.getheader('x-rate-limit-limit'))
-    # print(t.get_tweet_by_id(1512445562167169029))

@@ -1,0 +1,1 @@
+snscrape --jsonl --max-results 10 twitter-search "(from:TopAchat, OR from:CdiscountGaming) concours" > test.jsonl

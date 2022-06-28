@@ -20,13 +20,13 @@ class giveAwayBot:
 
     def run_bot(self):
         self.delete_old_scrap_results_file(RESULTS_DIR / "global_scrap_results.jsonl")
-        start_time = (datetime.datetime.now() - datetime.timedelta(days=7)).strftime(
+        start_time = (datetime.datetime.now() - datetime.timedelta(days=5)).strftime(
             "%Y-%m-%d"
         )
         scraping_params = {
             "search": "(concours)",
             "class_search": "twitter-search",
-            "max_results": 50,
+            "max_results": 10,
             "start_time": start_time,
         }
         if scraping_params["max_results"] > 0:
